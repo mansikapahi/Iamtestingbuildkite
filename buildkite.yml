@@ -3,5 +3,5 @@ env:
 steps:
   - label: ":hammer: Example Script"
     command: "cat source.lst"
-    command: echo "What is My name"
-    command: echo $MYVAR
+    command: "echo What is My name"
+    command: "echo $MYVAR"
