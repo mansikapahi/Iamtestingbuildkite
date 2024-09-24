@@ -1,7 +1,8 @@
-env:
-  MYVAR: "SomeValue"
 steps:
-  - label: ":hammer: Example Script"
-    command: "cat source.lst"
-    command: "echo What is My name"
-    command: "echo $MYVAR"
+  - label: "Print File and Env Var"
+    env:
+      MY_VAR: "Hello, Buildkite!"
+    command:
+      - cat source.lst
+      - echo $MY_VAR
+
